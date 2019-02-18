@@ -14,7 +14,7 @@ ENV TOMCAT_VERSION=8.5.34 \
 LABEL io.k8s.description="Platform for building and running JEE applications on tomcat" \
       io.k8s.display-name="builder tomcat" \
       io.openshift.expose-services="8080:http" \
-      io.openshift.tags="builder,tomcat"
+      io.openshift.tags="builder,tomcat" \
       io.openshift.s2i.destination="/opt/s2i/destination"
 COPY apache-maven-3.5.4-bin.tar /
 COPY apache-tomcat-8.5.34.tar /
